@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  height: 350px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block: 15px;
+  padding-inline: 10px;
+}
+.price {
+  color: #ee9972;
+  padding-inline: 10px;
+}
+.description {
+  color: lightgray;
+  margin-block: 20px;
+  padding-inline: 10px;
+}
+.itemName {
+  font-weight: bolder;
+}
+.dishPhoto {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.order {
+  padding-inline: 10px;
+  font-weight: bolder;
+}

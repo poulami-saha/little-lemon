@@ -1,0 +1,54 @@
+.booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding-inline: 60px;
+  background-color: #495e57;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.foodImage {
+  height: 250px;
+  width: 250px;
+}
+
+.title {
+  color: #f4ce14;
+  font-size: xx-large;
+  margin-block: 10px;
+}
+.location {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+.description {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.reserve {
+  width: 200px;
+  height: 50px;
+  background-color: #f4ce14;
+  font-weight: bolder;
+  border-radius: 25px;
+}
+.weekSpecial {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 60px;
+  font-weight: bolder;
+}
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-inline: 60px;
+}
