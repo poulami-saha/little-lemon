@@ -1,9 +1,85 @@
-import NavBar from "./NavBar";
+import React, { useState } from "react";
+import styles from "./Header.module.css";
+import Logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
+
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header>
-      <NavBar />
-    </header>
+    <>
+      <header className={styles.header}>
+        <img src={Logo} alt="logo" />
+        <nav className={styles.nav}>
+          <ul className={styles.navLinks}>
+            <li>
+              <a href="#home" role="button">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" role="button">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#menu" role="button">
+                Menu
+              </a>
+            </li>
+            <li>
+              <a href="#reservation">Reservation</a>
+            </li>
+            <li>
+              <a href="#order">Order Online</a>
+            </li>
+            <li>
+              <a href="#login">Login</a>
+            </li>
+          </ul>
+        </nav>
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
+      </header>
+      <div className={`${styles.sideDrawer} ${isOpen ? styles.open : ""}`}>
+        <nav className={styles.mobileNav} onClick={toggleMenu}>
+          <ul>
+            <li>
+              <Link to="/" role="button">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/" role="button">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/" role="button">
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link to="/booking">Reservation</Link>
+            </li>
+            <li>
+              <Link to="/">Order Online</Link>
+            </li>
+            <li>
+              <Link to="/">Login</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      {isOpen && <div className={styles.backdrop} onClick={toggleMenu}></div>}
+    </>
   );
 };
 

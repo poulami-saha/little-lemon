@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.label {
+  font-size: x-large;
+  color: lightgrey;
+  font-weight: bold;
+}
+.reserve {
+  width: 200px;
+  height: 50px;
+  background-color: #f4ce14;
+  font-weight: bolder;
+  border-radius: 25px;
+}
+.input {
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  padding: 10px;
+  border: none;
+}

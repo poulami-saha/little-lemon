@@ -5,7 +5,10 @@
   border: 2px solid black;
   border-radius: 25px;
   height: 350px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -18,9 +21,10 @@
   padding-inline: 10px;
 }
 .description {
-  color: lightgray;
+  color: darkgray;
   margin-block: 20px;
   padding-inline: 10px;
+  font-weight: bold;
 }
 .itemName {
   font-weight: bolder;

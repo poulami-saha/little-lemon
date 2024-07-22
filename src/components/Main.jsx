@@ -4,6 +4,7 @@ import greekSalad from "../assets/greek salad.jpg";
 import bruchetta from "../assets/bruchetta.svg";
 import lemonDessert from "../assets/lemon dessert.jpg";
 import Menu from "./Menu";
+import { useNavigate } from "react-router-dom";
 
 const items = [
   {
@@ -26,6 +27,10 @@ const items = [
   },
 ];
 const Main = () => {
+  const navigate = useNavigate();
+  const navigateToBooking = () => {
+    navigate("/booking");
+  };
   return (
     <main>
       <section className={styles.booking}>
@@ -36,7 +41,9 @@ const Main = () => {
             We are a family owned mediterranean restaurant, focused on
             traditional recipes served with a modern twist
           </p>
-          <button className={styles.reserve}>Reserve a Table</button>
+          <button className={styles.reserve} onClick={navigateToBooking}>
+            Reserve a Table
+          </button>
         </sidebar>
         <img src={restaurantFood} alt="" className={styles.foodImage} />
       </section>

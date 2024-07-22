@@ -3,21 +3,22 @@
   flex-direction: row;
   justify-content: flex-start;
   justify-content: space-around;
-  padding-inline: 60px;
+  padding-inline: 30px;
   background-color: #495e57;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
 .foodImage {
   height: 250px;
-  width: 250px;
+  width: 125px;
+  margin-left: 20px;
 }
 
 .title {
   color: #f4ce14;
-  font-size: xx-large;
+  font-size: x-large;
   margin-block: 10px;
 }
 .location {
@@ -25,8 +26,9 @@
   margin-bottom: 10px;
 }
 .description {
-  width: 50%;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: small;
 }
 
 .reserve {
@@ -49,6 +51,21 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-inline: 60px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .description {
+    width: 50%;
+    font-size: medium;
+  }
+  .foodImage {
+    height: 450px;
+    width: 100%;
+  }
+  .title {
+    font-size: xx-large;
+  }
 }

@@ -1,0 +1,27 @@
+.title {
+  color: #f4ce14;
+  font-size: xx-large;
+  margin-block: 10px;
+  font-weight: bolder;
+}
+.location {
+  font-size: x-large;
+  color: lightgrey;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.image {
+  width: 45%;
+  height: 45%;
+}
+
+.reservation {
+  padding-inline: 40px;
+  background-color: #495e57;
+}
