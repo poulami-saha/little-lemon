@@ -5,22 +5,21 @@
   align-items: center;
   padding-block: 30px;
   gap: 1.5rem;
-  background-color: #495e57;
-  color: lightgrey;
+  color: black;
 }
 .menuItems {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #495e57;
 }
-.reserve {
+.book {
   width: 200px;
   height: 50px;
   background-color: #f4ce14;
   font-weight: bolder;
   border-radius: 25px;
+  font-size: large;
 }
 @media (min-width: 768px) {
   .weekSpecial {

@@ -6,6 +6,7 @@
   height: 350px;
   margin-bottom: 20px;
   padding: 10px;
+  background-color: rgb(235, 233, 233);
 }
 
 .header {
@@ -21,14 +22,14 @@
 }
 
 .description {
-  color: lightgrey;
+  color: black;
   margin-block: 15px;
   padding-inline: 10px;
   text-align: center;
 }
 .itemName {
   font-weight: bolder;
-  color: lightgrey;
+  color: black;
 }
 .dishPhoto {
   height: 200px;

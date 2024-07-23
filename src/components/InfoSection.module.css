@@ -55,6 +55,7 @@
   background-color: #f4ce14;
   font-weight: bolder;
   border-radius: 25px;
+  font-size: large;
 }
 
 /* Responsive styles for mobile */
@@ -63,6 +64,10 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
+    padding-inline: 5rem;
+  }
+  .textContainer {
+    align-items: flex-start;
   }
   .imageContainer {
     flex: 1;
@@ -70,5 +75,12 @@
   }
   .description {
     width: 70%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    padding-inline: 15rem;
   }
 }

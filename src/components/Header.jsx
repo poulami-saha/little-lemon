@@ -17,28 +17,28 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul className={styles.navLinks}>
             <li>
-              <a href="#home" role="button">
+              <Link to="/" role="button">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" role="button">
+              <Link to="/" role="button">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#menu" role="button">
+              <Link to="/" role="button">
                 Menu
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#reservation">Reservation</a>
+              <Link to="/booking">Reservation</Link>
             </li>
             <li>
-              <a href="#order">Order Online</a>
+              <Link to="/">Order Online</Link>
             </li>
             <li>
-              <a href="#login">Login</a>
+              <Link to="/">Login</Link>
             </li>
           </ul>
         </nav>

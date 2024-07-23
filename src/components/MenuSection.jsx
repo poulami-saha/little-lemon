@@ -7,7 +7,7 @@ const MenuSection = () => {
     <section className={styles.container}>
       <article className={styles.weekSpecial}>
         <h2 className={styles.location}>This week's special</h2>
-        <button className={styles.reserve}>Online Menu</button>
+        <button className={styles.book}>Online Menu</button>
       </article>
       <article className={styles.menuItems}>
         {items.map(({ name, price, description, imagePath }) => {

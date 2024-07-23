@@ -74,8 +74,16 @@
 .menuIcon {
   display: flex;
 }
-
 @media (min-width: 768px) {
+  .header {
+    padding-inline: 5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .header {
+    padding-inline: 15rem;
+  }
   .menuIcon {
     display: none;
   }
