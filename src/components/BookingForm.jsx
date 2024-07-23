@@ -9,7 +9,6 @@ const BookingForm = ({
   isEditable,
   bookingDetails,
 }) => {
-  console.log(availableTimes);
   const [booking, setBooking] = useState({
     ...bookingDetails,
     bookingTime: bookingDetails.bookingTime ?? availableTimes[0],

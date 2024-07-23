@@ -15,17 +15,12 @@ const Booking = () => {
   const navigate = useNavigate();
 
   const submitForm = (booking) => {
-    console.log("hit");
-    const response = window.submitAPI(booking);
-    if (response) {
-      navigate("/confirmation", { state: booking });
+    if (typeof window.submitAPI === "function") {
+      const response = window.submitAPI(booking);
+      if (response) {
+        navigate("/confirmation", { state: booking });
+      }
     }
-    // if (typeof window.submitAPI === "function") {
-    //   const response = window.submitAPI(booking);
-    //   if (response) {
-    //     navigate("/confirmation", { state: booking });
-    //   }
-    // }
   };
 
   const handleBookingDate = (date) => {
