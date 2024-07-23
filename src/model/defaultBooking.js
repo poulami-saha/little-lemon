@@ -3,5 +3,10 @@ export const defaultBookingState = {
   bookingTime: "",
   guestsCount: 1,
   occasion: "birthday",
-  bookingName: "",
+  seating: "indoor",
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  special: "",
 };

@@ -2,3 +2,31 @@
   padding: 40px;
   background-color: #495e57;
 }
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.image {
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .images {
+    gap: 1rem;
+  }
+  .image {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .image {
+    height: 300px;
+    width: 300px;
+  }
+}

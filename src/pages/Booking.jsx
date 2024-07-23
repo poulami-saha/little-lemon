@@ -3,8 +3,10 @@ import styles from "./Booking.module.css";
 import { useReducer, useEffect, useState } from "react";
 import { updateTimes, initialState } from "../store/reducer";
 import { useNavigate } from "react-router-dom";
-import BookingInfo from "../components/BookingInfo";
 import { defaultBookingState } from "../model/defaultBooking";
+import restaurant from "../assets/restaurant.jpg";
+import restaurantChef from "../assets/restaurant chef B.jpg";
+import restaurantFood from "../assets/restauranfood.jpg";
 
 const Booking = () => {
   const [bookingDate, setBookingDate] = useState(new Date());
@@ -15,12 +17,9 @@ const Booking = () => {
   const navigate = useNavigate();
 
   const submitForm = (booking) => {
-    if (typeof window.submitAPI === "function") {
-      const response = window.submitAPI(booking);
-      if (response) {
-        navigate("/confirmation", { state: booking });
-      }
-    }
+    navigate("/confirmation", {
+      state: booking,
+    });
   };
 
   const handleBookingDate = (date) => {
@@ -75,7 +74,6 @@ const Booking = () => {
 
   return (
     <section className={styles.reservation}>
-      <BookingInfo task="Find a table for any occasion" />
       <BookingForm
         availableTimes={state.availableTimes}
         dispatch={dispatch}
@@ -84,6 +82,11 @@ const Booking = () => {
         isEditable={true}
         bookingDetails={defaultBookingState}
       />
+      <div className={styles.images}>
+        <img src={restaurant} className={styles.image} alt="" />
+        <img src={restaurantChef} className={styles.image} alt="" />
+        <img src={restaurantFood} className={styles.image} alt="" />
+      </div>
     </section>
   );
 };

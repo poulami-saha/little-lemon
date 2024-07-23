@@ -82,7 +82,7 @@
 
 @media (min-width: 960px) {
   .header {
-    padding-inline: 15rem;
+    padding-inline: 10rem;
   }
   .menuIcon {
     display: none;
