@@ -1,0 +1,25 @@
+.title {
+  color: #f4ce14;
+  font-size: xx-large;
+  margin-block: 10px;
+}
+.location {
+  color: lightgrey;
+  margin-bottom: 20px;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.image {
+  width: 48%;
+  height: 48%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

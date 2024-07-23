@@ -1,0 +1,37 @@
+.weekSpecial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 30px;
+  gap: 1.5rem;
+  background-color: #495e57;
+  color: lightgrey;
+}
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #495e57;
+}
+.reserve {
+  width: 200px;
+  height: 50px;
+  background-color: #f4ce14;
+  font-weight: bolder;
+  border-radius: 25px;
+}
+@media (min-width: 768px) {
+  .weekSpecial {
+    display: flex;
+    flex-direction: row;
+  }
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-inline: 60px;
+    gap: 20px;
+  }
+}

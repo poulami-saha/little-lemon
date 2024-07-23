@@ -1,0 +1,74 @@
+/* Container for the entire section */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  background-color: #495e57;
+  color: lightgrey;
+}
+
+/* Container for the text */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container for the image */
+.imageContainer {
+  background-image: url("../assets/restauranfood.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 20vh;
+}
+
+/* Ensure the image is responsive */
+.imageContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.title {
+  color: #f4ce14;
+  font-size: x-large;
+  margin-block: 10px;
+}
+.location {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+.description {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: small;
+}
+
+.reserve {
+  width: 200px;
+  height: 50px;
+  background-color: #f4ce14;
+  font-weight: bolder;
+  border-radius: 25px;
+}
+
+/* Responsive styles for mobile */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .imageContainer {
+    flex: 1;
+    height: 250px;
+  }
+  .description {
+    width: 70%;
+  }
+}

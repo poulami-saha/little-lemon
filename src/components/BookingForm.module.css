@@ -18,11 +18,13 @@
   background-color: #f4ce14;
   font-weight: bolder;
   border-radius: 25px;
+  margin-bottom: 20px;
 }
 .input {
   width: 200px;
   height: 40px;
   border-radius: 25px;
-  padding: 10px;
+  padding-block: 10px;
+  padding-inline: 20px;
   border: none;
 }

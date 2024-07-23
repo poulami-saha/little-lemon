@@ -1,8 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  color: black;
-  border: 2px solid black;
+  border: 1px solid lightgray;
   border-radius: 25px;
   height: 350px;
   margin-bottom: 20px;
@@ -20,14 +19,16 @@
   color: #ee9972;
   padding-inline: 10px;
 }
+
 .description {
-  color: darkgray;
-  margin-block: 20px;
+  color: lightgrey;
+  margin-block: 15px;
   padding-inline: 10px;
-  font-weight: bold;
+  text-align: center;
 }
 .itemName {
   font-weight: bolder;
+  color: lightgrey;
 }
 .dishPhoto {
   height: 200px;

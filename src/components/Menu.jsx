@@ -4,11 +4,10 @@ const Menu = ({ name, price, description, imagePath }) => {
     <article className={styles.container}>
       <img src={imagePath} alt="dish" className={styles.dishPhoto} />
       <div className={styles.header}>
-        <p className={styles.itemName}>{name}</p>
-        <p className={styles.price}>{price}</p>
+        <h3 className={styles.itemName}>{name}</h3>
+        <h3 className={styles.price}>{price}</h3>
       </div>
-      <p className={styles.description}>{description}</p>
-      <p className={styles.order}>Order a delivery</p>
+      <h4 className={styles.description}>{description}</h4>
     </article>
   );
 };
